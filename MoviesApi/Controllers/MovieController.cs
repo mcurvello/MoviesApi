@@ -59,7 +59,7 @@ namespace MoviesApi.Controllers
 			return NoContent();
 		}
 
-		[HttpPatch]
+		[HttpPatch("{id}")]
         public IActionResult UpdatePartialMovie(int id, JsonPatchDocument<UpdateMovieDto> patch)
         {
             var movie = _context.Movies.FirstOrDefault(m => m.Id == id);
