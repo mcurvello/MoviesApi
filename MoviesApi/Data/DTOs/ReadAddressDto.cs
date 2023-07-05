@@ -3,12 +3,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MoviesApi.Data.DTOs
 {
-	public class ReadCinemaDto
+	public class ReadAddressDto
 	{
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string StreetLine { get; set; }
 
-        public ReadAddressDto Address { get; set; }
+        public int Number { get; set; }
     }
 }
+
